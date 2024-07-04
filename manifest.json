@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Better GitHub UX",
+    "description": "A better GitHub experience",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://github.com/*"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "https://github.com/*"
+    ]
+}
